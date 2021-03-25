@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Aula de Spinner</string>
+    <string name="apres">Uso do Spinner</string>
+    <string-array name="opcoes">
+        <item>Feminino</item>
+        <item>Masculino</item>
+        <item>XXX</item>
+        <item>YYY</item>
+    </string-array>
+</resources>
