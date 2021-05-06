@@ -6,9 +6,11 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.RadioButton;
 
 public class TelaSomar extends AppCompatActivity {
     EditText edv1, edv2, edv3, edresp;
+    RadioButton rdCm, rdMm;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -17,7 +19,8 @@ public class TelaSomar extends AppCompatActivity {
         edv2 = (EditText) findViewById(R.id.editTextv2);
         edv3 = (EditText) findViewById(R.id.editTextv3);
         edresp = (EditText) findViewById(R.id.editTextResposta);
-
+        rdCm = (RadioButton) findViewById(R.id.radioCm);
+        rdMm = (RadioButton) findViewById(R.id.radioMm);
 
         edv1.setText(getIntent().getExtras().getString("valor1"));
         edv2.setText(getIntent().getExtras().getString("valor2"));

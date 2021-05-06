@@ -20,12 +20,16 @@
         "source": "C:\\Users\\glmme\\Documents\\Android\\TesteMaterial5\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
     },
     {
+        "merged": "C:\\Users\\glmme\\Documents\\Android\\TesteMaterial5\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\glmme\\Documents\\Android\\TesteMaterial5\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_launcher_background.xml"
+    },
+    {
         "merged": "C:\\Users\\glmme\\Documents\\Android\\TesteMaterial5\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
         "source": "C:\\Users\\glmme\\Documents\\Android\\TesteMaterial5\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\glmme\\Documents\\Android\\TesteMaterial5\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_launcher_background.xml.flat",
-        "source": "C:\\Users\\glmme\\Documents\\Android\\TesteMaterial5\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_launcher_background.xml"
+        "merged": "C:\\Users\\glmme\\Documents\\Android\\TesteMaterial5\\app\\build\\intermediates\\res\\merged\\debug\\drawable_figuras_geom_tricas.png.flat",
+        "source": "C:\\Users\\glmme\\Documents\\Android\\TesteMaterial5\\app\\src\\main\\res\\drawable\\figuras_geom_tricas.png"
     },
     {
         "merged": "C:\\Users\\glmme\\Documents\\Android\\TesteMaterial5\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",

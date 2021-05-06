@@ -1641,6 +1641,7 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable figuras_geom_tricas
 drawable ic_clock_black_24dp
 drawable ic_keyboard_black_24dp
 drawable ic_launcher_background
@@ -1774,6 +1775,8 @@ id bounce
 id button
 id button2
 id button3
+id button4
+id button5
 id buttonPanel
 id cache_measures
 id cancel_button
@@ -2065,8 +2068,15 @@ id textSpacerNoTitle
 id textStart
 id textTop
 id textView
+id textView10
+id textView11
+id textView12
+id textView13
+id textView14
+id textView15
 id textView2
 id textView3
+id textView4
 id textView5
 id textView6
 id textView7
