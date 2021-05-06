@@ -1,0 +1,6 @@
+com/example/testematerial5/TelaSomar.java
+ com.example.testematerial5.TelaSomar
+com/example/testematerial5/BuildConfig.java
+ com.example.testematerial5.BuildConfig
+com/example/testematerial5/MainActivity.java
+ com.example.testematerial5.MainActivity

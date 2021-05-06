@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
         editResultado = (EditText) findViewById(R.id.editResultado);
     }
 
-    public void calcular(View v){
+    public void somar(View v){
         // entrada
         valor1 = Double.parseDouble(editValor1.getText().toString());
         valor2 = Double.parseDouble(editValor2.getText().toString());
