@@ -25,9 +25,9 @@ public class Calculadora {
     public double somar(){
         return valor1 + valor2;
     }
-    public double subtrair(){return valor1 - valor2};
-    public double multiplicar(){return valor1 * valor2};
-    public double dividir(){return valor1 / valor2};
+    public double subtrair(){return valor1 - valor2;}
+    public double multiplicar(){return valor1 * valor2;}
+    public double dividir(){return valor1 / valor2;}
     public String formatar(double valor, int nc){
         return String.format("%." + String.valueOf(nc) +  "f", valor);
     }
