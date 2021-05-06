@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TesteMaterial5">
-        <activity android:name=".TelaCheckBox"></activity>
+        <activity android:name=".TelaSpinner"></activity>
+        <activity android:name=".TelaCheckBox" />
         <activity android:name=".TelaRadio" />
         <activity android:name=".MainActivity">
             <intent-filter>

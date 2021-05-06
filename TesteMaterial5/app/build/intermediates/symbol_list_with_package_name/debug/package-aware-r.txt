@@ -1642,7 +1642,6 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
-drawable figuras_geom_tricas
 drawable ic_clock_black_24dp
 drawable ic_keyboard_black_24dp
 drawable ic_launcher_background
@@ -1778,6 +1777,8 @@ id button2
 id button3
 id button4
 id button5
+id button6
+id button7
 id buttonPanel
 id cache_measures
 id cancel_button
@@ -1786,6 +1787,7 @@ id center_horizontal
 id center_vertical
 id chain
 id chains
+id checkCm
 id checkbox
 id checked
 id chip
@@ -2074,11 +2076,15 @@ id textView
 id textView10
 id textView11
 id textView12
-id textView13
-id textView14
-id textView15
 id textView16
+id textView17
+id textView18
+id textView19
 id textView2
+id textView20
+id textView21
+id textView22
+id textView24
 id textView3
 id textView4
 id textView5
@@ -2187,6 +2193,7 @@ layout abc_tooltip
 layout activity_main
 layout activity_tela_check_box
 layout activity_tela_radio
+layout activity_tela_spinner
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog

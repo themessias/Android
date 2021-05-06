@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    public void chamarSomar(View v) {
+    public void chamarCubo(View v) {
         if (edt1.getText().toString().isEmpty() || edt2.getText().toString().isEmpty() ||
                 edt3.getText().toString().isEmpty()) {
             Toast.makeText(this, "Preencha todos os valores", Toast.LENGTH_LONG).show();
@@ -49,11 +49,32 @@ public class MainActivity extends AppCompatActivity {
 
             intent = new Intent(getApplicationContext(), TelaRadio.class);
 
-            intent.putExtra("valor1", String.valueOf(val1));
-            intent.putExtra("valor2", String.valueOf(val2));
-            intent.putExtra("valor3", String.valueOf(val3));
+            intent.putExtra("base", String.valueOf(val1));
+            intent.putExtra("altura", String.valueOf(val2));
+            intent.putExtra("comprimento", String.valueOf(val3));
 
             startActivityForResult(intent, ACTIVITY_REQUEST_CUBO);
+        }
+    }
+
+    public void chamarPrisma(View v) {
+        if (!edt1.getText().toString().isEmpty() || !edt2.getText().toString().isEmpty() ||
+                !edt3.getText().toString().isEmpty()) {
+            Toast.makeText(this, "Todos os campos devem estar vazios", Toast.LENGTH_LONG).show();
+        } else {
+            intent = new Intent(getApplicationContext(), TelaCheckBox.class);
+            startActivity(intent);
+        }
+    }
+
+
+    public void chamarPiramide(View v) {
+        if (!edt1.getText().toString().isEmpty() || !edt2.getText().toString().isEmpty() ||
+                !edt3.getText().toString().isEmpty()) {
+            Toast.makeText(this, "Todos os campos devem estar vazios", Toast.LENGTH_LONG).show();
+        } else {
+            intent = new Intent(getApplicationContext(), TelaSpinner.class);
+            startActivity(intent);
         }
     }
 
