@@ -1983,6 +1983,8 @@ id postLayout
 id progress_circular
 id progress_horizontal
 id radio
+id radioCm
+id radioMm
 id ratio
 id rectangles
 id reverseSawtooth
@@ -2074,6 +2076,7 @@ id textView12
 id textView13
 id textView14
 id textView15
+id textView16
 id textView2
 id textView3
 id textView4

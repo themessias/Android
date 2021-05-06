@@ -29,10 +29,13 @@ public class MainActivity extends AppCompatActivity {
         super.onActivityResult(requestCode, resultCode, data);
         if (requestCode == ACTIVITY_REQUEST_SOMAR && resultCode == RESULT_OK){
             String retorno = data.getStringExtra("resp");
-            double soma = Double.parseDouble(retorno);
             tvResp.setVisibility(View.VISIBLE);
             edtResp.setVisibility(View.VISIBLE);
-            edtResp.setText(String.format("%.2f", soma));
+            edtResp.setText(retorno);
+            edt1.requestFocus();
+            edt1.setText("");
+            edt2.setText("");
+            edt3.setText("");
         }
     }
 

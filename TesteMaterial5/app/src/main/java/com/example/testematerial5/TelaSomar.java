@@ -29,11 +29,17 @@ public class TelaSomar extends AppCompatActivity {
 
     public void calcular(View v){
         double resultado,v1,v2,v3;
+        String medida;
         v1 = Double.parseDouble(getIntent().getExtras().getString("valor1"));
         v2 = Double.parseDouble(getIntent().getExtras().getString("valor2"));
         v3 = Double.parseDouble(getIntent().getExtras().getString("valor3"));
         resultado = v1 * v2 * v3;
-        edresp.setText(String.valueOf(resultado));
+        if (rdCm.isChecked()){
+            medida = " cm³";
+        } else {
+            medida = " mm³";
+        }
+        edresp.setText(String.valueOf(resultado)+medida);
     }
 
     public void voltar(View v){
