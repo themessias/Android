@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Calculo de volume</string>
+    <string-array name="opcoes">
+        <item>cm</item>
+        <item>mm</item>
+    </string-array>
 </resources>

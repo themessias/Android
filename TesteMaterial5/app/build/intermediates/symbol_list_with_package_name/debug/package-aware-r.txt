@@ -50,6 +50,7 @@ animator mtrl_fab_hide_motion_spec
 animator mtrl_fab_show_motion_spec
 animator mtrl_fab_transformation_sheet_collapse_spec
 animator mtrl_fab_transformation_sheet_expand_spec
+array opcoes
 attr actionBarDivider
 attr actionBarItemBackground
 attr actionBarPopupTheme
@@ -1779,6 +1780,8 @@ id button4
 id button5
 id button6
 id button7
+id button8
+id button9
 id buttonPanel
 id cache_measures
 id cancel_button
@@ -2033,6 +2036,7 @@ id snackbar_text
 id snap
 id snapMargins
 id spacer
+id spinner
 id spline
 id split_action_bar
 id spread
@@ -2076,6 +2080,9 @@ id textView
 id textView10
 id textView11
 id textView12
+id textView13
+id textView14
+id textView15
 id textView16
 id textView17
 id textView18
@@ -2084,7 +2091,9 @@ id textView2
 id textView20
 id textView21
 id textView22
+id textView23
 id textView24
+id textView25
 id textView3
 id textView4
 id textView5
