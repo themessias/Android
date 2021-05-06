@@ -7,12 +7,13 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     TextView tvResp;
     EditText edt1, edt2, edt3, edtResp;
     Intent intent;
-    static final int ACTIVITY_REQUEST_SOMAR = 1;
+    static final int ACTIVITY_REQUEST_CUBO = 1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,30 +28,39 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data){
         super.onActivityResult(requestCode, resultCode, data);
-        if (requestCode == ACTIVITY_REQUEST_SOMAR && resultCode == RESULT_OK){
+        if (requestCode == ACTIVITY_REQUEST_CUBO && resultCode == RESULT_OK){
             String retorno = data.getStringExtra("resp");
             tvResp.setVisibility(View.VISIBLE);
             edtResp.setVisibility(View.VISIBLE);
             edtResp.setText(retorno);
-            edt1.requestFocus();
-            edt1.setText("");
-            edt2.setText("");
-            edt3.setText("");
+            limpar();
         }
     }
 
-    public void chamarSomar(View v){
-        double val1, val2, val3;
-        val1 = Double.parseDouble(edt1.getText().toString());
-        val2 = Double.parseDouble(edt2.getText().toString());
-        val3 = Double.parseDouble(edt3.getText().toString());
+    public void chamarSomar(View v) {
+        if (edt1.getText().toString().isEmpty() || edt2.getText().toString().isEmpty() ||
+                edt3.getText().toString().isEmpty()) {
+            Toast.makeText(this, "Preencha todos os valores", Toast.LENGTH_LONG).show();
+        } else {
+            double val1, val2, val3;
+            val1 = Double.parseDouble(edt1.getText().toString());
+            val2 = Double.parseDouble(edt2.getText().toString());
+            val3 = Double.parseDouble(edt3.getText().toString());
 
-        intent = new Intent(getApplicationContext(), TelaSomar.class);
+            intent = new Intent(getApplicationContext(), TelaRadio.class);
 
-        intent.putExtra("valor1", String.valueOf(val1));
-        intent.putExtra("valor2", String.valueOf(val2));
-        intent.putExtra("valor3", String.valueOf(val3));
+            intent.putExtra("valor1", String.valueOf(val1));
+            intent.putExtra("valor2", String.valueOf(val2));
+            intent.putExtra("valor3", String.valueOf(val3));
 
-        startActivityForResult(intent, ACTIVITY_REQUEST_SOMAR);
+            startActivityForResult(intent, ACTIVITY_REQUEST_CUBO);
+        }
+    }
+
+    public void limpar(){
+        edt1.requestFocus();
+        edt1.setText("");
+        edt2.setText("");
+        edt3.setText("");
     }
 }

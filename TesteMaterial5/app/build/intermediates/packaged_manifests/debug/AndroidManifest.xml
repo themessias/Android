@@ -18,7 +18,8 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/Theme.TesteMaterial5" >
-        <activity android:name="com.example.testematerial5.TelaSomar" />
+        <activity android:name="com.example.testematerial5.TelaCheckBox" />
+        <activity android:name="com.example.testematerial5.TelaRadio" />
         <activity android:name="com.example.testematerial5.MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
